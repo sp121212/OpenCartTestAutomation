@@ -1,0 +1,88 @@
+# Created on 2023-12-13T19:32:09.052
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:386)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created on 2023-12-13T19:32:12.292
+Unexpected IOException with stream: Dec 13, 2023 7:32:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 119, so returning the closest version found: 116
+
+
+# Created on 2023-12-13T19:32:12.297
+Unexpected IOException with stream: Dec 13, 2023 7:32:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 119, so returning the closest version found: 116
+
+
+# Created on 2023-12-13T19:32:12.302
+Unexpected IOException with stream: Dec 13, 2023 7:32:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 119, so returning the closest version found: 116
+
+
+# Created on 2023-12-13T19:32:14.560
+Unexpected IOException: 5,1,com.qa.opencart.test.LoginPageTest,loginPageTitleTest(com.qa.opencart.test.LoginPageTest),com.qa.opencart.test.LoginPageTest,null,null
+
+
+# Created on 2023-12-13T19:32:14.725
+Unexpected IOException: 6,1,com.qa.opencart.test.LoginPageTest,loginPageTitleTest(com.qa.opencart.test.LoginPageTest),null,null,null
+
+
+# Created on 2023-12-13T19:32:14.738
+Unexpected IOException: 5,1,com.qa.opencart.test.LoginPageTest,loginPageUrlTest(com.qa.opencart.test.LoginPageTest),com.qa.opencart.test.LoginPageTest,null,null
+
+
+# Created on 2023-12-13T19:32:14.953
+Unexpected IOException: 6,1,com.qa.opencart.test.LoginPageTest,loginPageUrlTest(com.qa.opencart.test.LoginPageTest),null,null,null
+
+
+# Created on 2023-12-13T19:32:14.962
+Unexpected IOException: 5,1,com.qa.opencart.test.LoginPageTest,IsLogoAvaialbleTest(com.qa.opencart.test.LoginPageTest),com.qa.opencart.test.LoginPageTest,null,null
+
+
+# Created on 2023-12-13T19:32:15.320
+Unexpected IOException: 6,1,com.qa.opencart.test.LoginPageTest,IsLogoAvaialbleTest(com.qa.opencart.test.LoginPageTest),null,null,null
+
+
+# Created on 2023-12-13T19:32:15.328
+Unexpected IOException: 5,1,com.qa.opencart.test.LoginPageTest,isForgotLinkAvailableTest(com.qa.opencart.test.LoginPageTest),com.qa.opencart.test.LoginPageTest,null,null
+
+
+# Created on 2023-12-13T19:32:15.829
+Unexpected IOException: 6,1,com.qa.opencart.test.LoginPageTest,isForgotLinkAvailableTest(com.qa.opencart.test.LoginPageTest),null,null,null
+
+
+# Created on 2023-12-13T19:32:15.833
+Unexpected IOException: 5,1,com.qa.opencart.test.LoginPageTest,doLoginTest(com.qa.opencart.test.LoginPageTest),com.qa.opencart.test.LoginPageTest,null,null
+
+
+# Created on 2023-12-13T19:32:19.089
+Unexpected IOException: 5,1,com.qa.opencart.test.ProductInfoPageTest,prodInfoTest(com.qa.opencart.test.ProductInfoPageTest),com.qa.opencart.test.ProductInfoPageTest,null,null
+
+
+# Created on 2023-12-13T19:32:20.496
+Unexpected IOException with stream: READ DATA FROM SHEET: Sheet1
+
+
+# Created on 2023-12-13T19:32:20.509
+Unexpected IOException with stream: user name :augbatch2023@opencart.com
+
+
+# Created on 2023-12-13T19:32:20.549
+Unexpected IOException with stream: password :Selenium@12345
+
+
+# Created on 2023-12-13T19:32:20.870
+Unexpected IOException: 6,1,com.qa.opencart.test.LoginPageTest,doLoginTest(com.qa.opencart.test.LoginPageTest),null,null,null
+
+
+# Created on 2023-12-13T19:32:23.163
+Unexpected IOException: 5,1,com.qa.opencart.test.RegistrationPageTest,fillRegistrationLink(com.qa.opencart.test.RegistrationPageTest),com.qa.opencart.test.RegistrationPageTest,null,null
+
+
+# Created on 2023-12-13T19:32:24.112
+Unexpected IOException with stream: click on MacBook Pro
+
+
