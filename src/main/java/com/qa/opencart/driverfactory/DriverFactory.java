@@ -27,7 +27,8 @@ public class DriverFactory {
 //	public WebDriver initDriver(String browserName) {
 //		String browserName=getProp("browser");
 //		String browserName=getProp("browser");
-		System.out.println(browserName);
+		System.out.println("browserName: "+browserName);
+		
 		
 		switch(browserName) {
 		case "chrome":

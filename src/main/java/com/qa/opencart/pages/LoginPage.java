@@ -13,7 +13,7 @@ public class LoginPage {
 
 	//locators
 	private By email=By.cssSelector("#input-email");
-	private By pass=By.cssSelector("#input-password1");
+	private By pass=By.cssSelector("#input-password");
 	private By login=By.cssSelector("input[type='submit']");
 	private By forgotPassLink=By.linkText("Forgotten Password");
 	private By logo=By.cssSelector("img[src*='logo.png']");

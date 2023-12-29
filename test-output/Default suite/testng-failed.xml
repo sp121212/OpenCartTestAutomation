@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.opencart_bddcucumber.testrunner.TestRunner">
+      <class name="com.qa.opencart.test.LoginPageTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="doLoginTest"/>
+          <include name="isForgotLinkAvailableTest"/>
+          <include name="loginPageTitleTest"/>
+          <include name="setUp"/>
+          <include name="IsLogoAvaialbleTest"/>
+          <include name="loginPageUrlTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.opencart_bddcucumber.testrunner.TestRunner -->
+      </class> <!-- com.qa.opencart.test.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
