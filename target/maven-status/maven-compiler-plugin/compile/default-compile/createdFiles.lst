@@ -1,11 +1,13 @@
+com\qa\opencart\utils\PropUtil.class
+com\qa\opencart\pages\LoginPage.class
+com\qa\opencart\listeners\ExtentReportListener.class
+com\qa\opencart\pages\ProductInfoPage.class
+com\qa\opencart\pages\AccountsPage.class
+com\qa\opencart\pages\SearchResultPage.class
 com\qa\opencart\exception\OpencartAppException.class
 com\qa\opencart\utils\ElementUtils.class
 com\qa\opencart\utils\ExcelUtil.class
-com\qa\opencart\pages\LoginPage.class
 com\qa\opencart\utils\JavascriptUtil.class
 com\qa\opencart\constants\AppConstants.class
 com\qa\opencart\driverfactory\DriverFactory.class
-com\qa\opencart\pages\ProductInfoPage.class
-com\qa\opencart\pages\AccountsPage.class
 com\qa\opencart\pages\RegistrationPage.class
-com\qa\opencart\pages\SearchResultPage.class

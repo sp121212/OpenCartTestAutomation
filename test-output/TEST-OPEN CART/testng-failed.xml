@@ -4,13 +4,36 @@
   <listeners>
     <listener class-name="com.qa.opencart.listeners.ExtentReportListener"/>
   </listeners>
+  <test thread-count="4" parallel="tests" name="Account Page Test(failed)" verbose="2">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.opencart.test.AccountPageTest">
+        <methods>
+          <include name="isLogoutLinkExitTest"/>
+          <include name="accSetUp"/>
+          <include name="isSearchFieldTest"/>
+          <include name="accPageTitleTest"/>
+          <include name="searchProdTest"/>
+          <include name="setUp"/>
+          <include name="accPageURLTest"/>
+          <include name="accPageHeadersCountTest"/>
+          <include name="accPageHeadersTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.opencart.test.AccountPageTest -->
+    </classes>
+  </test> <!-- Account Page Test(failed) -->
   <test thread-count="4" parallel="tests" name="Login Page Test(failed)" verbose="2">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.qa.opencart.test.LoginPageTest">
         <methods>
           <include name="doLoginTest"/>
+          <include name="isForgotLinkAvailableTest"/>
+          <include name="loginPageTitleTest"/>
           <include name="setUp"/>
+          <include name="IsLogoAvaialbleTest"/>
+          <include name="loginPageUrlTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.qa.opencart.test.LoginPageTest -->

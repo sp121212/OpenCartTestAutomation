@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-29T08:44:54 IST" name="TEST-OPEN CART" finished-at="2023-12-29T08:45:02 IST" duration-ms="7223">
+  <suite started-at="2023-12-30T07:28:01 IST" name="Default suite" finished-at="2023-12-30T07:28:06 IST" duration-ms="4884">
     <groups>
     </groups>
-    <test started-at="2023-12-29T08:44:54 IST" name="Login Page Test" finished-at="2023-12-29T08:45:02 IST" duration-ms="7223">
+    <test started-at="2023-12-30T07:28:01 IST" name="Default test" finished-at="2023-12-30T07:28:06 IST" duration-ms="4884">
       <class name="com.qa.opencart.test.LoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.opencart.test.LoginPageTest@5ba88be8]" started-at="2023-12-29T08:44:54 IST" name="setUp" finished-at="2023-12-29T08:45:00 IST" duration-ms="5915" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.opencart.test.LoginPageTest@59505b48]" started-at="2023-12-30T07:28:01 IST" name="setUp" finished-at="2023-12-30T07:28:05 IST" duration-ms="3815" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.test.LoginPageTest@5ba88be8]" started-at="2023-12-29T08:45:00 IST" name="loginPageTitleTest" finished-at="2023-12-29T08:45:00 IST" duration-ms="25" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.qa.opencart.test.LoginPageTest@59505b48]" started-at="2023-12-30T07:28:05 IST" name="loginPageTitleTest" finished-at="2023-12-30T07:28:05 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method signature="loginPageUrlTest()[pri:2, instance:com.qa.opencart.test.LoginPageTest@5ba88be8]" started-at="2023-12-29T08:45:00 IST" name="loginPageUrlTest" finished-at="2023-12-29T08:45:00 IST" duration-ms="16" status="PASS">
+        <test-method signature="loginPageUrlTest()[pri:2, instance:com.qa.opencart.test.LoginPageTest@59505b48]" started-at="2023-12-30T07:28:05 IST" name="loginPageUrlTest" finished-at="2023-12-30T07:28:05 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageUrlTest -->
-        <test-method signature="IsLogoAvaialbleTest()[pri:3, instance:com.qa.opencart.test.LoginPageTest@5ba88be8]" started-at="2023-12-29T08:45:00 IST" name="IsLogoAvaialbleTest" finished-at="2023-12-29T08:45:00 IST" duration-ms="52" status="PASS">
+        <test-method signature="IsLogoAvaialbleTest()[pri:3, instance:com.qa.opencart.test.LoginPageTest@59505b48]" started-at="2023-12-30T07:28:05 IST" name="IsLogoAvaialbleTest" finished-at="2023-12-30T07:28:05 IST" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IsLogoAvaialbleTest -->
-        <test-method signature="isForgotLinkAvailableTest()[pri:4, instance:com.qa.opencart.test.LoginPageTest@5ba88be8]" started-at="2023-12-29T08:45:00 IST" name="isForgotLinkAvailableTest" finished-at="2023-12-29T08:45:00 IST" duration-ms="46" status="PASS">
+        <test-method signature="isForgotLinkAvailableTest()[pri:4, instance:com.qa.opencart.test.LoginPageTest@59505b48]" started-at="2023-12-30T07:28:05 IST" name="isForgotLinkAvailableTest" finished-at="2023-12-30T07:28:05 IST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isForgotLinkAvailableTest -->
-        <test-method signature="doLoginTest()[pri:5, instance:com.qa.opencart.test.LoginPageTest@5ba88be8]" started-at="2023-12-29T08:45:00 IST" name="doLoginTest" finished-at="2023-12-29T08:45:01 IST" duration-ms="949" status="PASS">
+        <test-method signature="doLoginTest()[pri:5, instance:com.qa.opencart.test.LoginPageTest@59505b48]" started-at="2023-12-30T07:28:05 IST" name="doLoginTest" finished-at="2023-12-30T07:28:06 IST" duration-ms="822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginPageTest@5ba88be8]" started-at="2023-12-29T08:45:01 IST" name="tearDown" finished-at="2023-12-29T08:45:02 IST" duration-ms="191" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.opencart.test.LoginPageTest@59505b48]" started-at="2023-12-30T07:28:06 IST" name="tearDown" finished-at="2023-12-30T07:28:06 IST" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.opencart.test.LoginPageTest -->
-    </test> <!-- Login Page Test -->
-  </suite> <!-- TEST-OPEN CART -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

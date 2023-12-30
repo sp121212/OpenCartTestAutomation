@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.driverfactory.DriverFactory;
+import com.qa.opencart.utils.PropUtil;
 
 public class LoginPageTest extends BaseTest{
 	
@@ -34,9 +35,15 @@ public class LoginPageTest extends BaseTest{
 	
 	@Test(priority = 5)
 	public void doLoginTest() {
-		accountPage=loginPage.doLogin(AppConstants.USER_NAME,AppConstants.PASSWORD);
-		System.out.println("user name :"+ AppConstants.USER_NAME);
-		System.out.println("password :"+ AppConstants.PASSWORD);
+//		accountPage=loginPage.doLogin(AppConstants.USER_NAME,AppConstants.PASSWORD);
+//		System.out.println("user name :"+ AppConstants.USER_NAME);
+//		System.out.println("password :"+ AppConstants.PASSWORD);
+		
+		accountPage=loginPage.doLogin(PropUtil.getProperty("username"),PropUtil.getProperty("password"));
+		System.out.println("\n---------------");
+		System.out.println("user name :"+ PropUtil.getProperty("username"));
+		System.out.println("password :"+ PropUtil.getProperty("password"));
+		System.out.println("---------------\n");
 		Assert.assertTrue(loginPage.isLogoutLinkPresent());
 	}
 }

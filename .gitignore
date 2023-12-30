@@ -3,7 +3,7 @@ screenshots/
 screenshot/
 test-output/
 build/
-
+target/
 application.log
 ##############################
 ## Java

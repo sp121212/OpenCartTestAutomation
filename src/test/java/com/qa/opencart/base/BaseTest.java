@@ -3,6 +3,7 @@ package com.qa.opencart.base;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
@@ -29,14 +30,16 @@ public class BaseTest {
 	
 	@Parameters("browser")
 	@BeforeTest
-	public  void setUp(String browser) {
+	public  void setUp(@Optional("chrome") String browserName) {
 		
-		if(DriverFactory.getProp(browser)!=null) {
-			PropUtil.initProp();
+		if(browserName !=null) {
+			PropUtil.setProperty("browser", browserName);
+			System.out.println("browser name::: " + PropUtil.getProperty("browser"));
 		}
-		
 		driverFactory=new DriverFactory();
-		driver=driverFactory.initDriver(browser);
+		
+//		driver=driverFactory.initDriver(PropUtil.getProperty("browser"));
+		driver=driverFactory.initDriver(browserName);
 		loginPage=new LoginPage(driver);
 		softAssert=new SoftAssert();
 	}

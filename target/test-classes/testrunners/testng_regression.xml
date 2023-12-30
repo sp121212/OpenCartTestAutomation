@@ -7,18 +7,17 @@
 	<listeners>
 		<listener
 			class-name="com.qa.opencart.listeners.ExtentReportListener" />
-
 	</listeners>
 
 
 	<test name="Login Page Test">
-		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="com.qa.opencart.test.LoginPageTest"></class>
 		</classes>
 	</test>
 
-	<!-- <test name="Account Page Test">
+	<test name="Account Page Test">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.qa.opencart.test.AccountPageTest"></class>
@@ -26,7 +25,7 @@
 	</test>
 
 	<test name="Product Info Page Test">
-		<parameter name="browser" value="edge"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.qa.opencart.test.ProductInfoPageTest"></class>
 		</classes>
@@ -37,6 +36,6 @@
 		<classes>
 			<class name="com.qa.opencart.test.RegistrationPageTest"></class>
 		</classes>
-	</test> -->
+	</test>
 
 </suite>
