@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="14.236" tests="17" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="23.846" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -65,21 +65,37 @@
     <property name="library.jansi.path" value="C:\apache-maven-3.9.5\lib\jansi-native"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="loginPageTitleTest" classname="com.qa.opencart.test.LoginPageTest" time="0.586"/>
-  <testcase name="loginPageUrlTest" classname="com.qa.opencart.test.LoginPageTest" time="0.065"/>
-  <testcase name="IsLogoAvaialbleTest" classname="com.qa.opencart.test.LoginPageTest" time="0.198"/>
-  <testcase name="isForgotLinkAvailableTest" classname="com.qa.opencart.test.LoginPageTest" time="0.105"/>
-  <testcase name="prodInfoTest" classname="com.qa.opencart.test.ProductInfoPageTest" time="1.939"/>
-  <testcase name="prodInfoTest" classname="com.qa.opencart.test.ProductInfoPageTest" time="0.534"/>
-  <testcase name="prodInfoTest" classname="com.qa.opencart.test.ProductInfoPageTest" time="1.337"/>
-  <testcase name="prodInfoTest" classname="com.qa.opencart.test.ProductInfoPageTest" time="1.298"/>
-  <testcase name="prodInfoTest" classname="com.qa.opencart.test.ProductInfoPageTest" time="1.138"/>
-  <testcase name="doLoginTest" classname="com.qa.opencart.test.LoginPageTest" time="0.028"/>
-  <testcase name="accPageHeadersCountTest" classname="com.qa.opencart.test.AccountPageTest" time="0.188"/>
-  <testcase name="accPageHeadersTest" classname="com.qa.opencart.test.AccountPageTest" time="0.136"/>
-  <testcase name="accPageTitleTest" classname="com.qa.opencart.test.AccountPageTest" time="0.009"/>
-  <testcase name="accPageURLTest" classname="com.qa.opencart.test.AccountPageTest" time="0.006"/>
-  <testcase name="isLogoutLinkExitTest" classname="com.qa.opencart.test.AccountPageTest" time="0.104"/>
-  <testcase name="isSearchFieldTest" classname="com.qa.opencart.test.AccountPageTest" time="0.051"/>
-  <testcase name="searchProdTest" classname="com.qa.opencart.test.AccountPageTest" time="1.039"/>
+  <testcase name="loginPageTitleTest" classname="com.qa.opencart.test.LoginPageTest" time="0.85">
+    <failure message="expected [Account Logina] but found [Account Login]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Account Logina] but found [Account Login]
+	at com.qa.opencart.test.LoginPageTest.loginPageTitleTest(LoginPageTest.java:31)
+</failure>
+    <system-out><![CDATA[...
+... TestNG 7.4.0 by Cédric Beust (cedric@beust.com)
+...
+
+I am in onStart method Login Page Test
+TestSuite is started.
+env name:prod
+prod propties is fetched
+browser name::: edge
+browserName: edge
+I am in onTestStart method loginPageTitleTest start
+loginPageTitleTest started.!
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Dec 31, 2023 9:17:55 AM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+INFO: Driver path: C:\Users\CEPL\.cache\selenium\msedgedriver\win64\120.0.2210.91\msedgedriver.exe
+Dec 31, 2023 9:17:55 AM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+INFO: Browser path: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Dec 31, 2023 9:18:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 120, so returning the closest version found: 116
+]]></system-err>
+  </testcase>
+  <testcase name="loginPageUrlTest" classname="com.qa.opencart.test.LoginPageTest" time="0.072"/>
+  <testcase name="IsLogoAvaialbleTest" classname="com.qa.opencart.test.LoginPageTest" time="0.236"/>
+  <testcase name="isForgotLinkAvailableTest" classname="com.qa.opencart.test.LoginPageTest" time="0.214"/>
+  <testcase name="doLoginTest" classname="com.qa.opencart.test.LoginPageTest" time="1.837"/>
 </testsuite>

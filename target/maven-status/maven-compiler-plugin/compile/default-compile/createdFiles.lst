@@ -1,3 +1,4 @@
+com\qa\opencart\listeners\TestAllureListener.class
 com\qa\opencart\utils\PropUtil.class
 com\qa\opencart\pages\LoginPage.class
 com\qa\opencart\listeners\ExtentReportListener.class

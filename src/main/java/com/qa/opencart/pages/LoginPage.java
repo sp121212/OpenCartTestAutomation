@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utils.ElementUtils;
 
+import io.qameta.allure.Step;
+
 public class LoginPage {
 
 	private WebDriver driver=null;
@@ -28,38 +30,45 @@ public class LoginPage {
 
 	//page actions/methods
 
+	@Step("Fetch the page title")
 	public String getPageTitle() {
 		return eleUtil.waitForTitles(AppConstants.LOGIN_PAGE_TITLE, AppConstants.MEDIUM_DEFAULT_WAIT);
 	}
 
+	@Step("Fetch the page url")
 	public String getPageURL() {
 		return eleUtil.waitForURLContains(AppConstants.LOGIN_PAGE_URL,AppConstants.MEDIUM_DEFAULT_WAIT);
 	}
 
+	@Step("Checking forgot password availability.")
 	public boolean isForgotPasswordLinkAvailable() {
 		return eleUtil.waitForVisibilityOfElement(forgotPassLink, AppConstants.MEDIUM_DEFAULT_WAIT).isDisplayed();
 	}
 
+	@Step("Checking logo vaialblity")
 	public boolean isLogoVailable() {
 		return eleUtil.waitForVisibilityOfElement(logo, AppConstants.MEDIUM_DEFAULT_WAIT).isDisplayed();
 	}
 
-
+	@Step("Checking logout link availability")
 	public boolean isLogoutLinkPresent() {
 		return eleUtil.waitForVisibilityOfElement(logoutLink, AppConstants.MEDIUM_DEFAULT_WAIT).isDisplayed();
 	}
 
+	
+	@Step("Checking registerlink availability")
 	public boolean isRegisterlinkPresent() {
 		return eleUtil.waitForVisibilityOfElement(registerLoc, AppConstants.MEDIUM_DEFAULT_WAIT).isDisplayed();
 	}
 
-	
+	@Step("Navigte to registration page")
 	public RegistrationPage navigateToRegistrationPage() {
 		eleUtil.doClickWithWait(registerLoc,AppConstants.MEDIUM_DEFAULT_WAIT);
 		return new RegistrationPage(driver);
 		
 	}
 	
+	@Step("passing username: {0} and password as {1}")
 	public AccountsPage doLogin(String userName,String password) {
 		eleUtil.doSendKeysWithWait(email, AppConstants.MEDIUM_DEFAULT_WAIT, userName);
 		eleUtil.doSendKeysWithWait(pass, AppConstants.MEDIUM_DEFAULT_WAIT,password);

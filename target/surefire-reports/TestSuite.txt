@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.236 s - in TestSuite
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.846 s <<< FAILURE! - in TestSuite
+loginPageTitleTest(com.qa.opencart.test.LoginPageTest)  Time elapsed: 0.85 s  <<< FAILURE!
+java.lang.AssertionError: expected [Account Logina] but found [Account Login]
+	at com.qa.opencart.test.LoginPageTest.loginPageTitleTest(LoginPageTest.java:31)
+

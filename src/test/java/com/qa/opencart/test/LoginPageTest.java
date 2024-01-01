@@ -8,15 +8,32 @@ import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.driverfactory.DriverFactory;
 import com.qa.opencart.utils.PropUtil;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
+
+
+@Epic("Epic 100: Design Open cart login page.")
+@Story("US 1010: Login page test script")
+@Feature("Login page valid scenarios")
 public class LoginPageTest extends BaseTest{
 	
 	
+	@Description("Login page title test.")
+	@Severity(SeverityLevel.MINOR)
 	@Test(priority=1)
 	public void loginPageTitleTest() {
 		String actPageTitle=loginPage.getPageTitle();
-		Assert.assertEquals(actPageTitle,AppConstants.LOGIN_PAGE_TITLE);
+		Assert.assertEquals(actPageTitle,AppConstants.LOGIN_PAGE_TITLE+"a");
 	}
 	
+	
+	@Description("Login page url test.")
+	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void loginPageUrlTest() {
 		String actPageUrl=loginPage.getPageURL();
@@ -28,17 +45,19 @@ public class LoginPageTest extends BaseTest{
 		Assert.assertTrue(loginPage.isLogoVailable());
 	}
 	
+	
+	@Description("Login page forgot link availblity test.")
+	@Severity(SeverityLevel.CRITICAL)
 	@Test(priority = 4)
 	public void isForgotLinkAvailableTest() {
 		Assert.assertTrue(loginPage.isForgotPasswordLinkAvailable());
 	}
 	
+	
+	@Description("Login page login functionality test")
+	@Severity(SeverityLevel.BLOCKER)
 	@Test(priority = 5)
 	public void doLoginTest() {
-//		accountPage=loginPage.doLogin(AppConstants.USER_NAME,AppConstants.PASSWORD);
-//		System.out.println("user name :"+ AppConstants.USER_NAME);
-//		System.out.println("password :"+ AppConstants.PASSWORD);
-		
 		accountPage=loginPage.doLogin(PropUtil.getProperty("username"),PropUtil.getProperty("password"));
 		System.out.println("\n---------------");
 		System.out.println("user name :"+ PropUtil.getProperty("username"));

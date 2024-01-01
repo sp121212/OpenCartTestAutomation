@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.qameta.allure.Step;
+
 public class ElementUtils {
 	private WebDriver driver=null;
 
@@ -59,6 +61,7 @@ public class ElementUtils {
 	}
 
 
+	@Step("Waiting for visibility of element for locator{0} with timeout {1}")
 	public WebElement waitForVisibilityOfElement(By locator,int timeOut) {
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
