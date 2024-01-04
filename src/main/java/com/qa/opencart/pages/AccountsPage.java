@@ -19,7 +19,7 @@ public class AccountsPage {
 		eleUtil=new ElementUtils(driver);
 	}
 
-
+	//
 	//locators
 	By accHeadersLocators=By.xpath("//div[@id='content']/h2");
 	By logoutLink=By.linkText("Logout");
