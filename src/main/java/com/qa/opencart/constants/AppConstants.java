@@ -8,7 +8,7 @@ public class AppConstants {
 	public static final String LOGIN_PAGE_TITLE="Account Login";
 	public static final String LOGIN_PAGE_URL="route=account/login";
 	
-	
+	//test
 	public static final String ACC_PAGE_TITLE="My Account";
 	public static final String ACC_PAGE_URL="route=account/account";
 	public static final int NUM_OF_HEADERS_IN_ACC_PAGE=4;
