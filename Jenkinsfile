@@ -3,12 +3,11 @@ pipeline{
 
 		stages{
 
-			stage("Build"){
-				steps{
-					git 'https://github.com/Jaipinder/https-github.com-jglick-simple-maven-project-with-tests.git'
-					sh "mvn -Dmaven.test.failure.ignore=true clean package"
-					 }
-				}
+			stage("build"){
+			steps{
+			echo "test build"
+			}
+			}
 				
 			stage("Regression Automation Tests"){
 				steps{
