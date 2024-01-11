@@ -15,7 +15,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.qa.opencart.driverfactory.DriverFactory;
+import com.qa.opencart.factory.DriverFactory;
 
 public class ExtentReportListener implements ITestListener {
 	public static final String OUTPUT_FOLDER = "./reports";

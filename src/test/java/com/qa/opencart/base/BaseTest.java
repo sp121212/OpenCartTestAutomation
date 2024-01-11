@@ -8,7 +8,7 @@ import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
 import com.beust.jcommander.Parameter;
-import com.qa.opencart.driverfactory.DriverFactory;
+import com.qa.opencart.factory.DriverFactory;
 import com.qa.opencart.pages.AccountsPage;
 import com.qa.opencart.pages.LoginPage;
 import com.qa.opencart.pages.ProductInfoPage;
@@ -25,21 +25,24 @@ public class BaseTest {
 	protected SearchResultPage searchResultPage;
 	protected ProductInfoPage productInfoPage;
 	protected RegistrationPage registrationPage;
-	
 	protected SoftAssert softAssert;
 	
-	@Parameters("browser")
+	@Parameters({"browser"})
 	@BeforeTest
 	public  void setUp(@Optional("chrome") String browserName) {
-		
-		if(browserName !=null) {
-			PropUtil.setProperty("browser", browserName);
-			System.out.println("browser name::: " + PropUtil.getProperty("browser"));
-		}
 		driverFactory=new DriverFactory();
 		
+//		if(browserName !=null) {
+//			PropUtil.setProperty("browser", browserName);
+//			System.out.println("browser name:::> " + PropUtil.getProperty("browser"));
+//		}
 //		driver=driverFactory.initDriver(PropUtil.getProperty("browser"));
+		
+		if(browserName==null) {
+			browserName=PropUtil.getProperty("browser");
+		}
 		driver=driverFactory.initDriver(browserName);
+		System.out.println("BROWSER:::  "+ browserName);
 		loginPage=new LoginPage(driver);
 		softAssert=new SoftAssert();
 	}

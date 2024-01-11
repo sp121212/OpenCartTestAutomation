@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
-import com.qa.opencart.driverfactory.DriverFactory;
+import com.qa.opencart.factory.DriverFactory;
 import com.qa.opencart.utils.PropUtil;
 
 import io.qameta.allure.Description;
@@ -37,7 +37,7 @@ public class LoginPageTest extends BaseTest{
 	@Test(priority = 2)
 	public void loginPageUrlTest() {
 		String actPageUrl=loginPage.getPageURL();
-		Assert.assertTrue(actPageUrl.contains(DriverFactory.getProp("url")));
+		Assert.assertTrue(actPageUrl.contains(PropUtil.getProperty("url")));
 	}
 	
 	@Test(priority = 3)
