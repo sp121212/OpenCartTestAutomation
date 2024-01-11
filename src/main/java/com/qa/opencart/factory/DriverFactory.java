@@ -27,7 +27,7 @@ public class DriverFactory {
 		// public WebDriver initDriver() {
 		optionsManager = new OptionsManager();
 		System.out.println("browserName:>>> " + browserName);
-
+//
 		if (browserName == null) {
 			if (Boolean.parseBoolean(PropUtil.getProperty("remote")) == true) {
 				System.out.println("BROWSER NAME:: " + browserName);
